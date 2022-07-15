@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  line-height: 1.75;
+  font-style: italic;
+  min-width: 720px;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+img {
+  vertical-align: middle;
+}
+img:hover {
+  opacity: 0.7;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  height: 958px;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../src/banner.png");
+}
+.banner-content h1 {
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 106px;
+}
+.banner-content .subTitle {
+  font-size: 24px;
+  line-height: 42px;
+}
+.banner-content h2 {
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 32px 13px;
+}
+.banner-content .social-list {
+  display: flex;
+  margin: 8px 13px 0 13px;
+  justify-content: space-around;
+}
+
+.about {
+  padding: 56px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  align-items: center;
+}
+.about h3 {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 84px;
+  margin-bottom: 40px;
+}
+.about img {
+  width: 384px;
+  height: 384px;
+}
+.about .school {
+  line-height: 1.5;
+}
+.about .profile-list {
+  margin-top: 20px;
+  margin-bottom: 23px;
+}
+.about .profile-list .birthday {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+.about .experience-list {
+  width: 384px;
+  border-top: 1px solid #000;
+}
+.about .experience-list .experience {
+  display: flex;
+  margin-top: 28px;
+  justify-content: center;
+  align-items: center;
+}
+.about .experience-list .red {
+  width: 22px;
+  height: 22px;
+  margin-right: 16px;
+  border-radius: 22px;
+  background-color: #891818;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFF;
+  padding-top: 56px;
+  padding-bottom: 120px;
+  text-align: center;
+  font-weight: 500;
+  background-color: #000;
+  bottom: 1px solid black;
+}
+.brand h3 {
+  font-size: 64px;
+  line-height: 84px;
+}
+.brand .subTitle {
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+.brand .introduce {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 68px;
+}
+.brand .picture-row {
+  display: flex;
+  height: 416px;
+  margin: 40px 0;
+  justify-content: space-between;
+}
+.brand .picture-row img:not(:last-child) {
+  margin-right: 24px;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  font-weight: 500;
+  padding-top: 56px;
+  padding-bottom: 96px;
+}
+.works h3 {
+  font-size: 64px;
+  line-height: 84px;
+}
+.works .content {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 16px;
+  margin-bottom: 56px;
+}
+.works-list {
+  display: flex;
+  font-size: 20px;
+  line-height: 42px;
+  margin-bottom: 48px;
+}
+.works-list li:not(:last-child) {
+  margin-right: 24px;
+}
+.works-list p {
+  margin-top: 16px;
+}
+
+.contact {
+  display: flex;
+  color: #FFF;
+  padding: 64px 0;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #000;
+}
+.contact h3 {
+  font-size: 64px;
+  line-height: 84px;
+}
+.contact p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+.contact li {
+  margin-top: 16px;
+}/*# sourceMappingURL=style.css.map */
