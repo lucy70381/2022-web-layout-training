@@ -1,0 +1,118 @@
+.blog-container {
+  @include mobile {
+    padding-bottom: 64px;
+  }
+}
+
+.article-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  margin-bottom: 124px;
+
+  @include pad {
+    row-gap: 24px;
+    margin-bottom: 80px;
+  }
+
+  @include mobile {
+    margin-bottom: 64px;
+  }
+}
+
+.article-item {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  justify-content: space-between;
+
+
+  .articleImg,
+  .article-detail {
+    width: 49.07%;
+
+    @include pad {
+      width: 48.27%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+.article-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .articleName {
+    font-size: 32px;
+    color: $blackRed;
+
+    @include pad {
+      font-size: 24px;
+    }
+  }
+
+  .engName {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+
+    @include pad {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    @include mobile {
+      margin-bottom: 0;
+    }
+  }
+
+  .block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .time {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .content {
+    color: $pageBorderGray;
+    font-size: 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    position: relative;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  @include pad {
+    .content:after {
+      right: 0;
+      bottom: 0;
+      content: "...more";
+      position: absolute;
+      background-color: #fff;
+    }
+  }
+
+  .more {
+    display: flex;
+    justify-content: end;
+    font-size: 36px;
+    font-weight: 900;
+    color: $blackRed;
+
+    @include pad {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.footer-container {
+  padding: 48px 12px 32px 12px;
+  position: relative;
+  @include pad {
+    padding: 48px 36px 40px 36px;
+  }
+  @include mobile {
+    padding: 24px 15px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: $red;
+  color: white;
+
+  a {
+    color: white;
+  }
+
+  &-row1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    justify-content: space-between;
+
+    @include mobile {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+.linkList {
+  display: flex;
+  justify-content: space-between;
+  a {
+    display: flex;
+  }
+  li {
+    font-size: 16px;
+    margin-right: 48px;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
+.socialList {
+  display: flex;
+
+  li {
+    margin-left: 32px;
+    @include pad {
+      margin-left: 16px;
+    }
+    img {
+      width: 48px;
+      height: 48px;
+      @include pad {
+        width: 40px;
+        height: 40px;
+      }
+      @include mobile {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+.contactList {
+  padding-bottom: 31px;
+  border-bottom: 1px solid white;
+  @include mobile {
+    padding-bottom: 24px;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    @include mobile {
+      font-size: 16px;
+    }
+    span {
+      margin-right: 20px;
+    }
+  }
+  li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.service {
+  display: flex;
+  margin-top: 32px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-between;
+  @include mobile {
+    margin-top: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .serviceList {
+    display: flex;
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    li {
+      font-size: 14px;
+      margin-left: 48px;
+      @include mobile {
+        margin-left: 0;
+        margin-top: 8px;
+      }
+    }
+  }
+}

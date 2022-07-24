@@ -1,0 +1,139 @@
+
+.blogContent-container {
+  padding-top: 24px;
+  @include pad {
+    padding-top: 8px;
+  }
+  @include mobile {
+    padding-top: 16px;
+    padding-bottom: 64px;
+  }
+}
+
+.breadCrumbs {
+  font-size: 16px;
+  margin-bottom: 8px;
+  .nowBlogTitle {
+    color: $red;
+  }
+}
+
+.nowTags {
+  display: flex;
+  column-gap: 15px;
+  color: $red;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
+.blogBlock {
+  display: flex;
+  column-gap: 24px;
+  .blogTitle {
+    font-size: 48px;
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  .engName {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    @include pad {
+      margin-bottom: 24px;
+    }
+    @include mobile {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+  }
+  .articleContent {
+    width: 66.04%;
+    @include pad {
+      width: 74.13%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+.blogpage-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  color: $pageBorderGray;
+  margin-bottom: 40px;
+  img {
+    margin-bottom: 8px;
+  }
+}
+
+.share-list {
+  display: flex;
+  column-gap: 16px;
+  font-weight: bold;
+  align-items: center;
+  margin-bottom: 16px;
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.blog-footer {
+  display: flex;
+  @include mobile {
+    display: none;
+  }
+  padding-top: 24px;
+  border-top: 1px solid #000;
+  justify-content: space-between;
+  &-item {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+}
+
+.blog-sideBar {
+  width: 21%;
+  @include pad {
+    width: 20%;
+  }
+  @include mobile {
+    display: none;
+  }
+  color: $red;
+  .tags, span {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    @include pad {
+      font-size: 16px;
+    }
+  }
+  span {
+    margin-right: 12px;
+    @include pad {
+      margin-right: 2px;
+    }
+  }
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 24px;
+  font-size: 24px;
+  font-weight: bold;
+  @include pad {
+    gap: 0 16px;
+    font-size: 16px;
+  }
+}

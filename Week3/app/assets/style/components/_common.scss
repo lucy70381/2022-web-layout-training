@@ -1,0 +1,117 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 12px;
+  max-width: 1296px;
+
+  @include pad {
+    max-width: 768px;
+    padding: 80px 36px;
+  }
+
+  @include mobile {
+    max-width: 375px;
+    padding: 40px 14px 40px 13px;
+  }
+}
+
+.pageTitle {
+  display: inline-block;
+  font-size: 48px;
+  font-weight: bold;
+  padding-left: 16px;
+  border-left: 8px solid $darkRed;
+  margin-bottom: 32px;
+
+  @include pc {
+    margin-top: 16px;
+  }
+
+  @include mobile {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.products-pageList {
+  display: flex;
+  justify-content: center;
+
+  li {
+    border: 1px solid $pageBorderGray;
+    margin: 0 0 -1px -1px;
+  }
+
+  .page button {
+    height: 100%;
+    font-size: 18px;
+    padding: 0 16px;
+
+    @include mobile {
+      font-size: 16px;
+      padding: 0 15px;
+    }
+  }
+
+  .active {
+    background-color: $black;
+
+    button {
+      color: white;
+    }
+  }
+
+  .prevBtn button,
+  .nextBtn button {
+    font-size: 19px;
+    padding: 11px 12px;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  .nextBtn {
+    background-color: $nextBtnGray;
+  }
+}
+
+.blog-nav {
+  background-color: $blackRed;
+}
+
+.blog-nav-container {
+  display: flex;
+  color: white;
+  padding: 13px 0;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mobile {
+    justify-content: center;
+  }
+}
+
+.blog-nav-list {
+  display: flex;
+  font-size: 20px;
+  column-gap: 48px;
+
+  @include mobile {
+    font-size: 16px;
+    column-gap: 25px;
+  }
+  a {
+    color: white;
+  }
+}
+
+.searchIcon {
+  display: flex;
+  align-items: center;
+  color: white;
+  @include mobile {
+    display: none;
+  }
+}

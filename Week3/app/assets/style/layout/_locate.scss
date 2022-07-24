@@ -1,0 +1,73 @@
+.locate-container {
+  @include mobile {
+    padding-bottom: 64px;
+  }
+
+  .choiceBlock {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+    @include mobile {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+    select {
+      width: 304px;
+      margin-left: 16px;
+      font-size: 18px;
+      padding: 6px 12px;
+      @include mobile {
+        width: 276px;
+        margin-left: 3px;
+      }
+    }
+  }
+}
+
+.locateList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 1.85%;
+
+  li {
+    width: 32.08%;
+    @include pad {
+      width: 48.27%;
+      gap: 24px 24px;
+    }
+
+    @include mobile {
+      width: 100%;
+      gap: 24px 24px;
+    }
+  }
+  .storeName {
+    font-size: 24px;
+    padding: 8px 0 8px 24px;
+    border-left: 1px solid $storeBorderGray;
+    border-right: 1px solid $storeBorderGray;
+  }
+  .storeInfo {
+    font-size: 20px;
+    padding: 16px 24px;
+    border: 1px solid $storeBorderGray;
+    p {
+      display: flex;
+    }
+  }
+  span {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  a {
+    display: block;
+    padding: 16px 0;
+    color: white;
+    font-size: 19px;
+    line-height: 27px;
+    text-align: center;
+    background-color: $black;
+  }
+}

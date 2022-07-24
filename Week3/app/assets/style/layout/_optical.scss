@@ -1,0 +1,154 @@
+.topTab-container {
+  margin: 0 auto;
+  max-width: 1296px;
+
+  @include pad {
+    width: 100%;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.product-topTab {
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  li {
+    display: inline-block;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 24px 0;
+    text-align: center;
+    border-left: 1px solid $lightGray;
+
+    &:last-child {
+      border-right: 1px solid $lightGray;
+    }
+
+    @include pad {
+      padding: 16px 0;
+    }
+
+    @include mobile {
+      font-size: 16px;
+      padding: 16px 0;
+    }
+  }
+}
+
+
+
+.product-header {
+  ul {
+    display: flex;
+  }
+
+  li {
+    width: 50%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .product-header-sm-img {
+    display: none;
+  }
+
+  @include pad {
+    .product-header-img {
+      display: none;
+    }
+
+    .product-header-sm-img {
+      display: unset;
+    }
+  }
+}
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+
+  h2 {
+    margin-bottom: 32px;
+    font-size: 42px;
+    font-weight: 500;
+
+    span {
+      font-size: 32px;
+      font-weight: normal;
+    }
+  }
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px 1.85%;
+  margin-bottom: 80px;
+
+  li {
+    width: 23.61%;
+
+    @include pad {
+      width: 48.27%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  p {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .model {
+    font-size: 24px;
+  }
+
+  .price {
+    color: $red;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .colors {
+    display: flex;
+
+    div {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+    }
+
+    .color1 {
+      margin-right: 8px;
+      background-color: $darkBrown;
+    }
+
+    .color2 {
+      background-color: $brown;
+    }
+  }
+}
+
+.optical {
+  li:nth-child(1) {
+    border-bottom: 8px solid $red;
+  }
+}

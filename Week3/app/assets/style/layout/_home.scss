@@ -1,0 +1,275 @@
+.home-banner {
+  display: flex;
+  color: $blackRed;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: calc(100vw / 3840 * 1574);
+  background-image: url('../../../assets/images/home-header.png');
+  @include pad {
+    height: calc(100vw / 750 * 792);
+    background-image: url('../../../assets/images/home-header-sm.png');
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    h2 {
+      font-size: 64px;
+      font-weight: bold;
+      margin-bottom: 4px;
+      @include mobile {
+        font-size: 24px;
+      }
+    }
+    h3 {
+      font-size: 36px;
+      @include pad {
+        font-size: 16px;
+      }
+    }
+    a {
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+      padding: 6px 12px;
+      background-color: $red;
+    }
+  }
+}
+
+section .home-title {
+  font-size: 48px;
+  text-align: center;
+  font-weight: bold;
+  color: $blackRed;
+  margin-bottom: 48px;
+  @include mobile {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.home-section2 {
+  background-color: $pink;
+  .home-title {
+    margin-bottom: 32px;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include pad {
+      row-gap: 48px;
+    }
+    @include mobile {
+      row-gap: 24px;
+    }
+  }
+
+  li{
+    width: 23.61%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include pad {
+      width: 48.27%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+    img {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 24px;
+    }
+    .feature {
+      font-size: 24px;
+      font-weight: bold;
+      color: $blackRed;
+      margin-bottom: 8px;
+    }
+    .desc {
+      font-size: 16px;
+    }
+  }
+}
+
+.home-section3 {
+  ul {
+    display: flex;
+    flex-wrap: wrap;  
+    row-gap: 24px;
+    justify-content: space-between;
+    @include pad {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  li {
+    width: 32.09%;
+    @include pad {
+      width: 48.4%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  a {
+    width: 100%;
+  }
+  img {
+    margin-bottom: 8px;
+  }
+  .desc {
+    color: $red;
+    font-size: 48px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+.home-section4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../../../assets/images/index-bg.png');
+  .home-title {
+    display: flex;
+    color: white;
+    justify-content: center;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    justify-content: center;
+  }
+  li {
+    width: 50%;
+    @include pad {
+      width: 100%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+    p {
+      width: 100%;
+      padding: 8px 0;
+      font-size: 48px;
+      color: $red;
+      font-weight: 900;
+      font-style: italic;
+      text-align: center;
+      background: white;
+    }
+  }
+}
+
+.home-section5 {
+  ul {
+    display: flex;
+    row-gap: 24px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include mobile {
+      row-gap: 16px;
+    }
+  }
+  li {
+    width: 23.61%;
+    @include pad {
+      width: 48.27%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  .commentBlock {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    height: 205px;
+    bottom: 1px solid $black;
+    box-shadow: 0 2px 6px $blackShadow;
+    .name {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    .comment {
+      margin-bottom: auto;
+    }
+    .time {
+      color: $gray;
+      font-size: 14px;
+    }
+  }
+}
+
+.home-section6 {
+  background-color: $pink;
+  &-container {
+    width: 48.91%;
+    margin: 0 auto;
+    padding: 80px 0;
+    @include pad {
+      width: 82.75%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  p {
+    margin-bottom: 24px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  ul {
+    width: 100%;
+    label {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    input {
+      width: 100%;
+      height: 36px;
+      margin-bottom: 16px;
+    }
+  }
+  .agree lable {
+    margin-bottom: 16px;
+  }
+  
+  .opinion {
+    height: 136px;
+  }
+  .agreeBlock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+    @include mobile {
+      align-items: flex-start;
+    }
+    input {
+      margin-right: 4px;
+    }
+  }
+  .submit {
+    margin: 0 auto;
+    color: white;
+    font-size: 16px;
+    padding: 16px 176px;
+    background-color: $red;
+    @include mobile {
+      padding: 16px 142px;
+    }
+  }
+}

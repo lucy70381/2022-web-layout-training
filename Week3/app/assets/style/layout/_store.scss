@@ -1,0 +1,117 @@
+.store-container {
+  @include mobile {
+    padding-bottom: 64px;
+  }
+
+  .choiceBlock {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+
+    @include mobile {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+
+    select {
+      width: 304px;
+      margin-left: 16px;
+      font-size: 18px;
+      padding: 6px 12px;
+
+      @include mobile {
+        width: 276px;
+        margin-left: 3px;
+      }
+    }
+  }
+}
+
+.singleStore {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  justify-content: space-between;
+
+  .singleStoreInfo {
+    width: 40.5%;
+
+    @include pad {
+      width: 100%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  .storeName {
+    font-size: 24px;
+    padding: 8px 0 8px 24px;
+    border: 1px solid $storeBorderGray;
+    border-right: 1px solid $storeBorderGray;
+  }
+
+  .storeInfo {
+    font-size: 20px;
+    padding: 16px 24px;
+    border: 1px solid $storeBorderGray;
+    margin: -1px 0 0 0;
+
+    p {
+      display: flex;
+    }
+  }
+
+  span {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  a {
+    display: block;
+    padding: 16px 0;
+    color: white;
+    font-size: 19px;
+    line-height: 27px;
+    text-align: center;
+    background-color: $black;
+  }
+
+  .map {
+    width: 57.56%;
+
+    img {
+      height: 100%;
+    }
+
+    @include pad {
+      width: 100%;
+    }
+  }
+}
+
+.info-wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  justify-content: space-between;
+
+  li {
+    width: 100%;
+
+    @include pad {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 48.27%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}

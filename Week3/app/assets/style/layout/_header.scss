@@ -1,0 +1,102 @@
+.header-container {
+  padding: 0px 12px;
+
+  @include pad {
+    padding: 0 36px;
+  }
+
+  @include mobile {
+    padding: 0px 15px;
+  }
+}
+
+.header {
+  display: flex;
+  height: 80px;
+  background-color: $red;
+  justify-content: center;
+
+  h1 a {
+    width: 80px;
+    height: 48px;
+    display: block;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    background-image: url('../../../assets/images/logo-white.png');
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      display: none;
+      width: 40px;
+      height: 40px;
+      background-color: $red;
+
+      @include mobile {
+        display: unset;
+      }
+    }
+
+    span {
+      color: white;
+      width: 30px;
+      height: 20px;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    margin-left: 64px;
+  }
+
+  a {
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  @include mobile {
+    ul {
+      display: none;
+    }
+  }
+}
+
+.menu-container {
+  display: none;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+  li {
+    width: 50%;
+    padding: 12px 0;
+    text-align: center;
+    background-color: $red;
+    border: 1px solid white;
+    &:nth-child(odd) {
+      margin-left: -1px;
+    }
+    &:nth-child(even) {
+      margin-right: -1px;
+    }
+    a {
+      color: white;
+    }
+  }
+}
