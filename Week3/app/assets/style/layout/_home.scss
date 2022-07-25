@@ -5,10 +5,10 @@
   background-size: contain;
   background-repeat: no-repeat;
   height: calc(100vw / 3840 * 1574);
-  background-image: url('../../../assets/images/home-header.png');
+  background-image: url('../images/home-header.png');
   @include pad {
     height: calc(100vw / 750 * 792);
-    background-image: url('../../../assets/images/home-header-sm.png');
+    background-image: url('../images/home-header-sm.png');
   }
   
   ul {
@@ -136,7 +136,7 @@ section .home-title {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url('../../../assets/images/index-bg.png');
+  background-image: url('../images/index-bg.png');
   .home-title {
     display: flex;
     color: white;
